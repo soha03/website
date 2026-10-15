@@ -1,0 +1,93 @@
+---
+const resources = [
+  {
+    type: "RESEARCH REPORT",
+    title: "European Electricity Price Risk Analysis",
+    description:
+      "Project report and findings on electricity prices, forecasting benchmarks and quantitative risk measures.",
+    file: "/files/electricity-price-risk-report.pdf",
+    note: "Add your PDF to public/files when it is ready.",
+  },
+  {
+    type: "PRESENTATION",
+    title: "Electricity Market Risk Research Presentation",
+    description:
+      "Slides explaining the research question, data, methods, empirical findings and limitations.",
+    file: "/files/electricity-price-risk-presentation.pdf",
+    note: "Add an exported PDF of your presentation to public/files.",
+  },
+  {
+    type: "CODE",
+    title: "Research Repository",
+    description:
+      "Source code, documentation and reproducible analysis for the electricity market risk project.",
+    file: "https://github.com/soha03/climate-electricity-risk",
+    note: "External repository",
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resources | Soha Sami</title>
+    <meta name="description" content="Research reports, presentations and code resources by Soha Sami." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      :root{--paper:#f7f7f0;--green:#234b3b;--light:#e5ebdf;--ink:#202b25;--muted:#657169;--line:#dce1d7}
+      *{box-sizing:border-box}
+      body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.7}
+      .wrap{width:min(1000px,calc(100% - 40px));margin:auto}
+      header{padding:25px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:center}
+      a{color:var(--green);text-decoration:none}
+      .brand{font-weight:700;font-size:1.1rem}
+      nav{display:flex;gap:20px;flex-wrap:wrap;font-size:.88rem}
+      .hero{padding:80px 0 45px}
+      .eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.14em;color:var(--green);text-transform:uppercase}
+      h1,h2{font-family:"Playfair Display",Georgia,serif;font-weight:500;line-height:1.2}
+      h1{font-size:clamp(2.7rem,6vw,4.5rem);letter-spacing:-.04em;margin:15px 0}
+      .lead{max-width:680px;color:var(--muted);font-size:1.05rem}
+      .resource{padding:28px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:180px 1fr;gap:30px}
+      .type{font-size:.75rem;font-weight:700;letter-spacing:.1em;color:var(--green)}
+      h2{font-size:1.65rem;margin:0 0 10px}
+      .description{color:var(--muted);margin:0 0 12px}
+      .note{font-size:.8rem;color:var(--muted)}
+      .link{display:inline-block;margin-top:8px;font-weight:700;font-size:.9rem}
+      footer{margin-top:50px;padding:25px 0;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
+      @media(max-width:650px){header{align-items:flex-start;flex-direction:column}.resource{grid-template-columns:1fr;gap:8px}.hero{padding-top:55px}}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <a class="brand" href="/">Soha Sami.</a>
+        <nav aria-label="Main navigation">
+          <a href="/">Home</a><a href="/research">Research</a><a href="/projects">Projects</a><a href="/articles">Articles</a><a href="/resources">Resources</a><a href="/about">About</a>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="eyebrow">Downloads and references</div>
+          <h1>Research you can examine.</h1>
+          <p class="lead">A collection of reports, presentations and code. Download links become active when the corresponding files are added to the repository.</p>
+        </section>
+        {resources.map((resource) => (
+          <article class="resource">
+            <div class="type">{resource.type}</div>
+            <div>
+              <h2>{resource.title}</h2>
+              <p class="description">{resource.description}</p>
+              <div class="note">{resource.note}</div>
+              <a class="link" href={resource.file} target="_blank" rel="noreferrer">
+                {resource.file.startsWith("https://") ? "Open repository ↗" : "Open resource ↗"}
+              </a>
+            </div>
+          </article>
+        ))}
+      </main>
+      <footer>© {new Date().getFullYear()} Soha Sami · <a href="/">Home</a></footer>
+    </div>
+  </body>
+</html>
