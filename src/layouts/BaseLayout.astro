@@ -1,0 +1,44 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+}
+
+const { title = "Soha Sami" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta
+      name="description"
+      content="Soha Sami | Energy, climate and quantitative research"
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav>
+        <a href="/website/" class="site-name">Soha Sami</a>
+
+        <div class="nav-links">
+          <a href="/website/research/">Research</a>
+          <a href="/website/projects/">Projects</a>
+          <a href="/website/articles/">Articles</a>
+          <a href="/website/resources/">Resources</a>
+          <a href="/website/about/">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <slot />
+
+    <footer class="site-footer">
+      <p>© {new Date().getFullYear()} Soha Sami</p>
+    </footer>
+  </body>
+</html>
