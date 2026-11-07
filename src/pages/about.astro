@@ -1,12 +1,244 @@
----
+﻿---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const data = {
-  research: ["Research", "Questions, methods and current work."],
-  projects: ["Projects", "Code, data and reproducible research."],
-  articles: ["Articles", "Writing on energy, markets and climate finance."],
-  resources: ["Resources", "Selected tools, references and research material."],
-  about: ["About", "Economics, mathematics and quantitative energy research."]
-};
-const [title, subtitle] = data["about"];
 ---
-<BaseLayout title={title + " | Soha Sami"}><section class="inner-hero shell" data-reveal><p class="eyebrow">{title}</p><h1>{subtitle}</h1></section><section class="section shell"><div class="research-grid"><article class="research-card featured" data-reveal><div class="card-top"><span>01</span><span>SELECTED</span></div><div><p class="card-kicker">{title}</p><h3>{subtitle}</h3><p>More detailed material will be added here as the research portfolio develops.</p></div><a href="/website/">Back to home ↗</a></article></div></section></BaseLayout>
+
+<BaseLayout title="About | Soha Sami">
+  <section class="inner-hero shell" data-reveal>
+    <p class="eyebrow">About Soha</p>
+    <h1>Economics.<br />Mathematics.<br /><em>Energy.</em></h1>
+  </section>
+
+  <section class="about-intro shell" data-reveal>
+    <div class="about-intro-label">
+      <span>01</span>
+      <p>Background</p>
+    </div>
+
+    <div class="about-intro-copy">
+      <p class="about-lead">
+        I am a graduate student working across energy markets, quantitative
+        finance and climate-related risk.
+      </p>
+
+      <p>
+        My academic background combines economics and mathematics with graduate
+        training in energy market finance and financial mathematics. I started
+        with Economics and Mathematics at the University of Delhi and am now
+        completing graduate studies in Europe through the Erasmus Mundus
+        GrEnFin programme alongside Financial and Insurance Mathematics at
+        LMU Munich.
+      </p>
+
+      <p>
+        My studies have taken me between Bologna, Paris and Munich, with each
+        programme adding a different part of the quantitative and economic
+        toolkit I use in my work.
+      </p>
+    </div>
+  </section>
+
+  <section class="education-section">
+    <div class="shell">
+      <div class="section-head" data-reveal>
+        <span class="section-number">02</span>
+        <div>
+          <p class="eyebrow">Education</p>
+          <h2>Three degrees.<br /><em>One direction.</em></h2>
+        </div>
+      </div>
+
+      <div class="education-list">
+
+        <article class="education-item" data-reveal>
+          <div class="education-year">2025–2027</div>
+
+          <div class="education-content">
+            <p class="education-type">CURRENT · GRADUATE STUDIES</p>
+            <h3>Erasmus Mundus GrEnFin</h3>
+            <h4>Greening Energy Market and Finance</h4>
+
+            <p>
+              A joint European master's programme focused on the economics,
+              finance and transformation of energy markets. My studies cover
+              electricity markets, energy finance, climate and business,
+              quantitative methods and the changing structure of European
+              energy systems.
+            </p>
+
+            <div class="education-universities">
+              <span>Università di Bologna</span>
+              <span>Université Paris Dauphine-PSL</span>
+              <span>LMU Munich</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="education-item" data-reveal>
+          <div class="education-year">2025–2027</div>
+
+          <div class="education-content">
+            <p class="education-type">GRADUATE STUDIES · MUNICH</p>
+            <h3>MSc Financial and Insurance Mathematics</h3>
+            <h4>Ludwig-Maximilians-Universität München</h4>
+
+            <p>
+              My quantitative training at LMU focuses on the mathematical
+              foundations of finance and risk. I am developing skills in
+              stochastic modelling, quantitative risk management, financial
+              mathematics, numerical methods and statistical modelling.
+            </p>
+
+            <div class="education-tags">
+              <span>Stochastic Modelling</span>
+              <span>Quantitative Risk</span>
+              <span>Financial Mathematics</span>
+              <span>Numerical Methods</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="education-item" data-reveal>
+          <div class="education-year">2021–2025</div>
+
+          <div class="education-content">
+            <p class="education-type">FOUNDATION · NEW DELHI</p>
+            <h3>BA Economics & Mathematics</h3>
+            <h4>University of Delhi</h4>
+
+            <p>
+              My bachelor's degree gave me the foundation that connects the
+              economic and quantitative sides of my work. Studying economics
+              alongside mathematics developed my understanding of economic
+              systems, statistical analysis, mathematical methods and
+              quantitative reasoning.
+            </p>
+
+            <div class="education-tags">
+              <span>Economics</span>
+              <span>Mathematics</span>
+              <span>Statistics</span>
+              <span>Quantitative Analysis</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="journey-section">
+    <div class="shell">
+      <div class="section-head" data-reveal>
+        <span class="section-number">03</span>
+        <div>
+          <p class="eyebrow">Academic journey</p>
+          <h2>New Delhi →<br />Bologna → Paris → <em>Munich</em></h2>
+        </div>
+      </div>
+
+      <div class="journey-grid">
+
+        <div class="journey-place" data-reveal>
+          <span>01</span>
+          <h3>New Delhi</h3>
+          <p>Economics & Mathematics</p>
+          <small>2021–2025</small>
+        </div>
+
+        <div class="journey-place" data-reveal>
+          <span>02</span>
+          <h3>Bologna</h3>
+          <p>Energy markets & finance</p>
+          <small>GrEnFin</small>
+        </div>
+
+        <div class="journey-place" data-reveal>
+          <span>03</span>
+          <h3>Paris</h3>
+          <p>Climate & Business</p>
+          <small>Paris Dauphine-PSL</small>
+        </div>
+
+        <div class="journey-place active" data-reveal>
+          <span>04</span>
+          <h3>Munich</h3>
+          <p>Financial & Insurance Mathematics</p>
+          <small>LMU Munich</small>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about-focus-section">
+    <div class="shell about-focus-grid">
+
+      <div data-reveal>
+        <p class="eyebrow">What I am learning</p>
+        <h2>Building the<br /><em>toolkit.</em></h2>
+      </div>
+
+      <div class="focus-columns" data-reveal>
+
+        <div>
+          <span>ENERGY</span>
+          <p>Electricity markets</p>
+          <p>Market design</p>
+          <p>Renewable generation</p>
+          <p>Flexibility</p>
+          <p>Power price dynamics</p>
+        </div>
+
+        <div>
+          <span>QUANTITATIVE</span>
+          <p>Stochastic modelling</p>
+          <p>Quantitative risk management</p>
+          <p>Numerical methods</p>
+          <p>Monte Carlo simulation</p>
+          <p>Dependence modelling</p>
+        </div>
+
+        <div>
+          <span>COMPUTATIONAL</span>
+          <p>Python</p>
+          <p>Statistical analysis</p>
+          <p>Data pipelines</p>
+          <p>Git & GitHub</p>
+          <p>Reproducible research</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="scholarship-section">
+    <div class="shell scholarship-grid" data-reveal>
+      <div>
+        <p class="eyebrow">Erasmus Mundus</p>
+        <h2>Studying across<br /><em>Europe.</em></h2>
+      </div>
+
+      <div>
+        <p class="scholarship-title">
+          Erasmus Mundus Joint Master in Greening Energy Market and Finance
+        </p>
+        <p>
+          The scholarship has allowed me to study energy markets and finance
+          across different European academic environments, combining the
+          economic perspective of energy transition with quantitative and
+          financial training.
+        </p>
+        <p>
+          The mobility is an important part of the programme: rather than
+          studying the energy transition from one academic system, I have
+          experienced different approaches across Italy, France and Germany.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-end shell" data-reveal>
+    <p class="eyebrow">Currently</p>
+    <h2>Energy markets, quantitative finance,<br /><em>and what connects them.</em></h2>
+  </section>
+</BaseLayout>
