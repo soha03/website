@@ -1,5 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://sohasami.com',
+  site: 'https://soha03.github.io',
+  base: '/website',
+  trailingSlash: 'always',
 });
