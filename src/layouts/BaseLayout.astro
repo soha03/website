@@ -1,16 +1,47 @@
 ﻿---
-import "../styles/global.css";
-interface Props { title?: string; description?: string }
-const { title = "Soha Sami | Energy, Climate & Quantitative Research", description = "Research, computational projects and writing on energy markets, climate risk and quantitative finance." } = Astro.props;
+const { title = "Soha Sami", description = "", active = "" } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
-<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>{title}</title><meta name="description" content={description} /><meta name="theme-color" content="#0b3b2b" /></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title}</title>
+</head>
 <body>
-<div class="grain"></div>
-<header class="site-header"><nav class="nav shell"><a class="brand" href="/website/">SOHA SAMI<span>.</span></a><div class="nav-links"><a href="/website/">Home</a><a href="/website/research/">Research</a><a href="/website/projects/">Projects</a><a href="/website/articles/">Articles</a><a href="/website/resources/">Resources</a><a href="/website/about/">About</a></div><a class="nav-contact" href="#contact">Contact <span>â†—</span></a></nav></header>
-<main><slot /></main>
-<footer class="footer shell" id="contact"><div><p class="eyebrow">Open to research & industry opportunities</p><h2>Letâ€™s build something<br /><em>useful.</em></h2></div><div class="footer-links"><a href="https://www.linkedin.com/in/sohasami/" target="_blank" rel="noreferrer">LinkedIn â†—</a><a href="https://substack.com/@footnoteenergy" target="_blank" rel="noreferrer">Substack â†—</a><a href="mailto:soha.sami@dauphine.eu">Email â†—</a></div><div class="footer-bottom"><span>Soha Sami</span><span>Energy Â· Climate Â· Quantitative Research</span><span>Â© {new Date().getFullYear()}</span></div></footer>
-<script>const items=document.querySelectorAll('[data-reveal]');const observer=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');observer.unobserve(e.target)}}),{threshold:.12});items.forEach(i=>observer.observe(i));</script>
-</body></html>
+  <header class="site-header">
+    <div class="shell nav">
+      <a class="brand" href="/website/">SOHA SAMI<span>.</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/website/" class:list={{ active: active === "home" }}>Home</a>
+        <a href="/website/research/" class:list={{ active: active === "research" }}>Research</a>
+        <a href="/website/projects/" class:list={{ active: active === "projects" }}>Projects</a>
+        <a href="/website/articles/" class:list={{ active: active === "articles" }}>Articles</a>
+        <a href="/website/resources/" class:list={{ active: active === "resources" }}>Resources</a>
+        <a href="/website/about/" class:list={{ active: active === "about" }}>About</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <slot />
+  </main>
+
+  <footer class="footer shell" id="contact">
+    <div class="footer-inner">
+      <div>
+        <p class="eyebrow">CONTACT</p>
+        <h2>Soha Sami</h2>
+        <p>Energy markets · Climate risk · Quantitative finance</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:soha.sami@dauphine.eu">Email</a>
+        <a href="https://www.linkedin.com/in/sohasami/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://substack.com/@footnoteenergy" target="_blank" rel="noreferrer">Substack</a>
+        <a href="https://github.com/soha03" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
