@@ -312,3 +312,17 @@
 .hero a:hover {
   color: var(--green-600) !important;
 }
+
+[data-reveal] {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+[data-reveal].is-visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  filter: none !important;
+}
