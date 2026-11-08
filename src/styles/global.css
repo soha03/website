@@ -326,3 +326,12 @@
   transform: none !important;
   filter: none !important;
 }
+
+.university-image img {
+  width: 140px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
