@@ -12,535 +12,1015 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     <!-- HERO -->
     <section class="about-hero">
-      <div class="about-hero-inner">
+      <div class="about-shell">
 
-        <p class="eyebrow">ABOUT ME</p>
+        <p class="about-kicker">ABOUT ME</p>
 
-        <h1>
-          I study how uncertainty and the energy transition
-          shape markets, financial decisions and risk.
-        </h1>
+        <div class="about-hero-grid">
 
-        <p class="about-intro">
-          My background is in economics and mathematics, with studies across
-          finance, energy economics, quantitative finance, computational
-          methods and climate-related finance.
-        </p>
+          <div class="about-hero-copy">
 
-        <div class="profile-photo">
-          <img
-            src="/website/images/soha-profile.png"
-            alt="Soha Sami"
-          />
+            <h1>
+              I study how uncertainty and the energy transition shape
+              markets, financial decisions and risk.
+            </h1>
+
+            <p>
+              My background is in economics and mathematics and has
+              expanded through finance, energy economics, quantitative
+              finance, computational methods and climate-related research.
+            </p>
+
+            <p>
+              My studies have taken me from New Delhi to Bologna, Munich
+              and Paris, giving me experience across economics, finance,
+              energy markets and quantitative modelling.
+            </p>
+
+          </div>
+
+
+          <div class="about-photo-frame">
+            <img
+              src="/website/images/soha-profile.png"
+              alt="Soha Sami"
+            />
+          </div>
+
         </div>
 
       </div>
     </section>
 
 
-    <!-- ACADEMIC PATH -->
-    <section class="about-section academic-section">
+    <!-- EDUCATION -->
+    <section class="about-section">
 
-      <div class="section-heading">
-        <p class="eyebrow">ACADEMIC PATH</p>
-        <h2>Economics, finance, energy and quantitative methods.</h2>
-      </div>
+      <div class="about-shell">
 
-      <div class="academic-grid">
-
-        <!-- DELHI -->
-        <a
-          class="academic-card"
-          href="https://www.du.ac.in/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div class="card-location">NEW DELHI · INDIA ↗</div>
-
-          <h3>University of Delhi</h3>
-
-          <p class="degree">
-            BA Economics &amp; Mathematics
-          </p>
-
-          <p class="card-meta">
-            2021–2025
-          </p>
-
-          <p class="card-description">
-            Economics, mathematics, statistics and quantitative analysis,
-            providing the foundation for my graduate studies.
-          </p>
-        </a>
+        <div class="section-intro">
+          <p class="about-kicker">EDUCATION</p>
+          <h2>A multidisciplinary academic path.</h2>
+        </div>
 
 
-        <!-- BOLOGNA -->
-        <a
-          class="academic-card"
-          href="https://www.unibo.it/en/study/second-cycle-degree/programme/2026/6693"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div class="card-location">BOLOGNA · ITALY ↗</div>
+        <div class="university-grid">
 
-          <h3>Università di Bologna</h3>
+          <!-- DELHI -->
+          <a
+            href="https://www.du.ac.in/"
+            target="_blank"
+            rel="noreferrer"
+            class="university-card"
+          >
 
-          <p class="degree">
-            MSc Greening Energy Market and Finance
-          </p>
+            <div class="university-image university-delhi">
 
-          <p class="card-meta">
-            Finance · Economics · Energy &amp; Climate
-          </p>
+              <svg viewBox="0 0 500 260" aria-hidden="true">
+                <rect width="500" height="260" fill="#e9eee5"/>
+                <circle cx="250" cy="108" r="62"
+                  fill="none"
+                  stroke="#10553d"
+                  stroke-width="4"/>
+                <circle cx="250" cy="108" r="49"
+                  fill="none"
+                  stroke="#3f8b68"
+                  stroke-width="2"/>
 
-          <p class="card-description">
-            Finance and economics applied to energy and climate, including
-            financial markets, climate and energy economics, risk modelling,
-            asset management and transition risk.
-          </p>
-        </a>
+                <path
+                  d="M210 108
+                     L225 88
+                     L250 72
+                     L275 88
+                     L290 108
+                     L278 108
+                     L278 137
+                     L222 137
+                     L222 108 Z"
+                  fill="#10553d"
+                />
+
+                <path
+                  d="M230 137 L230 103
+                     M250 137 L250 103
+                     M270 137 L270 103"
+                  stroke="#c7f36b"
+                  stroke-width="4"
+                />
+
+                <text
+                  x="250"
+                  y="190"
+                  text-anchor="middle"
+                  fill="#10553d"
+                  font-size="18"
+                  font-family="Arial, sans-serif"
+                  letter-spacing="3"
+                >
+                  DELHI
+                </text>
+              </svg>
+
+            </div>
+
+            <div class="university-content">
+              <span>NEW DELHI · INDIA ↗</span>
+
+              <h3>University of Delhi</h3>
+
+              <strong>BA Economics &amp; Mathematics</strong>
+
+              <small>2021–2025</small>
+
+              <p>
+                Economics, mathematics, statistics and quantitative analysis.
+              </p>
+            </div>
+
+          </a>
 
 
-        <!-- LMU -->
-        <a
-          class="academic-card"
-          href="https://www.fm.math.lmu.de/en/study-programs/master-financial-and-insurance-mathematics/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div class="card-location">MUNICH · GERMANY ↗</div>
+          <!-- BOLOGNA -->
+          <a
+            href="https://www.unibo.it/en"
+            target="_blank"
+            rel="noreferrer"
+            class="university-card"
+          >
 
-          <h3>LMU Munich</h3>
+            <div class="university-image university-bologna">
 
-          <p class="degree">
-            MSc Financial and Insurance Mathematics
-          </p>
+              <svg viewBox="0 0 500 260" aria-hidden="true">
+                <rect width="500" height="260" fill="#f5f6ef"/>
 
-          <p class="card-meta">
-            Computational Finance · Fixed Income · QRM · Numerical Methods
-          </p>
+                <path
+                  d="M90 205
+                     L90 145
+                     L125 145
+                     L125 110
+                     L165 110
+                     L165 145
+                     L205 145
+                     L205 95
+                     L245 95
+                     L245 145
+                     L285 145
+                     L285 115
+                     L325 115
+                     L325 145
+                     L365 145
+                     L365 205 Z"
+                  fill="#10553d"
+                />
 
-          <p class="card-description">
-            Financial mathematics and quantitative methods, with coursework
-            in computational finance, fixed income, quantitative risk
-            management and numerical methods.
-          </p>
-        </a>
+                <path
+                  d="M75 205 H385"
+                  stroke="#c7f36b"
+                  stroke-width="7"
+                />
+
+                <circle
+                  cx="250"
+                  cy="67"
+                  r="22"
+                  fill="none"
+                  stroke="#3f8b68"
+                  stroke-width="3"
+                />
+
+                <text
+                  x="250"
+                  y="235"
+                  text-anchor="middle"
+                  fill="#10553d"
+                  font-size="18"
+                  font-family="Arial, sans-serif"
+                  letter-spacing="3"
+                >
+                  BOLOGNA
+                </text>
+              </svg>
+
+            </div>
+
+            <div class="university-content">
+              <span>BOLOGNA · ITALY ↗</span>
+
+              <h3>Università di Bologna</h3>
+
+              <strong>MSc Greening Energy Market and Finance</strong>
+
+              <small>Finance · Economics · Energy &amp; Climate</small>
+
+              <p>
+                Finance and economics applied to energy and climate,
+                including energy markets, financial analysis and risk.
+              </p>
+            </div>
+
+          </a>
 
 
-        <!-- DAUPHINE -->
-        <a
-          class="academic-card academic-card-featured"
-          href="https://dauphine.psl.eu/formations/masters/economie-finance"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div class="card-location">PARIS · FRANCE ↗</div>
+          <!-- LMU -->
+          <a
+            href="https://www.lmu.de/en/"
+            target="_blank"
+            rel="noreferrer"
+            class="university-card"
+          >
 
-          <h3>Université Paris Dauphine-PSL</h3>
+            <div class="university-image university-lmu">
 
-          <p class="degree">
-            MSc Economics and Finance
-          </p>
+              <svg viewBox="0 0 500 260" aria-hidden="true">
+                <rect width="500" height="260" fill="#e9eee5"/>
 
-          <p class="card-meta">
-            Energy Economics · Empirical Markets · Project Finance
-          </p>
+                <path
+                  d="M95 190
+                     L95 105
+                     L145 105
+                     L145 80
+                     L195 80
+                     L195 105
+                     L245 105
+                     L245 80
+                     L295 80
+                     L295 105
+                     L345 105
+                     L345 190 Z"
+                  fill="#10553d"
+                />
 
-          <p class="card-description">
-            Economics and finance with a focus on energy and environmental
-            economics, empirical modelling of electricity and gas markets,
-            project finance and climate-related finance.
-          </p>
-        </a>
+                <path
+                  d="M75 190 H365"
+                  stroke="#c7f36b"
+                  stroke-width="7"
+                />
+
+                <path
+                  d="M115 125 H325"
+                  stroke="#f5f6ef"
+                  stroke-width="5"
+                  opacity=".8"
+                />
+
+                <path
+                  d="M115 145 H325"
+                  stroke="#f5f6ef"
+                  stroke-width="5"
+                  opacity=".8"
+                />
+
+                <text
+                  x="250"
+                  y="225"
+                  text-anchor="middle"
+                  fill="#10553d"
+                  font-size="20"
+                  font-family="Arial, sans-serif"
+                  font-weight="600"
+                  letter-spacing="4"
+                >
+                  LMU MUNICH
+                </text>
+              </svg>
+
+            </div>
+
+            <div class="university-content">
+              <span>MUNICH · GERMANY ↗</span>
+
+              <h3>LMU Munich</h3>
+
+              <strong>MSc Financial and Insurance Mathematics</strong>
+
+              <small>
+                Computational Finance · Fixed Income · QRM · Numerical Methods
+              </small>
+
+              <p>
+                Financial mathematics, stochastic modelling, quantitative
+                risk management, computational finance and numerical methods.
+              </p>
+            </div>
+
+          </a>
+
+
+          <!-- DAUPHINE -->
+          <a
+            href="https://dauphine.psl.eu/en/"
+            target="_blank"
+            rel="noreferrer"
+            class="university-card university-featured"
+          >
+
+            <div class="university-image university-paris">
+
+              <svg viewBox="0 0 500 260" aria-hidden="true">
+                <rect width="500" height="260" fill="#10553d"/>
+
+                <rect
+                  x="105"
+                  y="55"
+                  width="290"
+                  height="110"
+                  rx="10"
+                  fill="none"
+                  stroke="#c7f36b"
+                  stroke-width="5"
+                />
+
+                <path
+                  d="M135 140
+                     L175 85
+                     L215 140
+                     L255 85
+                     L295 140
+                     L335 85
+                     L375 140"
+                  fill="none"
+                  stroke="#fbfcf7"
+                  stroke-width="7"
+                />
+
+                <circle
+                  cx="250"
+                  cy="112"
+                  r="18"
+                  fill="#c7f36b"
+                />
+
+                <text
+                  x="250"
+                  y="205"
+                  text-anchor="middle"
+                  fill="#fbfcf7"
+                  font-size="19"
+                  font-family="Arial, sans-serif"
+                  letter-spacing="3"
+                >
+                  DAUPHINE · PSL
+                </text>
+              </svg>
+
+            </div>
+
+            <div class="university-content">
+              <span>PARIS · FRANCE ↗</span>
+
+              <h3>Université Paris Dauphine-PSL</h3>
+
+              <strong>MSc Economics and Finance</strong>
+
+              <small>
+                Energy Economics · Empirical Markets · Project Finance
+              </small>
+
+              <p>
+                Economics and finance with work in empirical modelling of
+                electricity and gas markets, project finance and climate
+                and business topics.
+              </p>
+            </div>
+
+          </a>
+
+        </div>
 
       </div>
     </section>
 
 
-    <!-- SKILLS & METHODS -->
+    <!-- SKILLS -->
     <section class="about-section skills-section">
 
-      <div class="section-heading">
-        <p class="eyebrow">SKILLS &amp; METHODS</p>
-        <h2>What I work with.</h2>
-      </div>
+      <div class="about-shell">
 
-      <div class="skills-grid">
+        <div class="section-intro">
+          <p class="about-kicker">SKILLS &amp; METHODS</p>
+          <h2>What I have learned to work with.</h2>
+        </div>
 
-        <article class="skill-group">
-          <h3>Energy Markets</h3>
-          <p>
-            Electricity markets · Gas markets · Market design · Power prices ·
-            Renewable generation · Flexibility
-          </p>
-        </article>
 
-        <article class="skill-group">
-          <h3>Finance &amp; Investment</h3>
-          <p>
-            Financial markets · Project finance · Asset management ·
-            Fixed income · Green finance
-          </p>
-        </article>
+        <div class="skills-grid">
 
-        <article class="skill-group">
-          <h3>Quantitative Finance</h3>
-          <p>
-            Stochastic modelling · Quantitative risk management ·
-            Computational finance · Numerical methods
-          </p>
-        </article>
+          <!-- ENERGY -->
+          <article class="skill-card">
 
-        <article class="skill-group">
-          <h3>Economics &amp; Empirical Analysis</h3>
-          <p>
-            Energy economics · Econometrics · Empirical modelling ·
-            Market analysis · Statistics
-          </p>
-        </article>
+            <div class="skill-drawing">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <path
+                  d="M15 72 L35 48 L50 62 L70 28 L88 42"
+                  fill="none"
+                  stroke="#10553d"
+                  stroke-width="5"
+                />
+                <circle cx="15" cy="72" r="5" fill="#c7f36b"/>
+                <circle cx="35" cy="48" r="5" fill="#c7f36b"/>
+                <circle cx="50" cy="62" r="5" fill="#c7f36b"/>
+                <circle cx="70" cy="28" r="5" fill="#c7f36b"/>
+                <circle cx="88" cy="42" r="5" fill="#c7f36b"/>
+              </svg>
+            </div>
 
-        <article class="skill-group">
-          <h3>Climate &amp; Risk</h3>
-          <p>
-            Climate risk · Transition risk · Physical risk ·
-            Climate economics · Risk assessment
-          </p>
-        </article>
+            <h3>Energy markets</h3>
 
-        <article class="skill-group">
-          <h3>Programming &amp; Research</h3>
-          <p>
-            Python · Java · Data analysis · Computational modelling ·
-            Research methods · LaTeX
-          </p>
-        </article>
+            <p>
+              Electricity and gas markets, market design, power prices,
+              renewable generation and flexibility.
+            </p>
+
+          </article>
+
+
+          <!-- QUANT -->
+          <article class="skill-card">
+
+            <div class="skill-drawing">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <path
+                  d="M15 80
+                     C25 55, 25 55, 38 65
+                     C51 75, 52 30, 65 42
+                     C78 54, 75 22, 88 15"
+                  fill="none"
+                  stroke="#10553d"
+                  stroke-width="5"
+                />
+                <path
+                  d="M15 80 H88"
+                  stroke="#3f8b68"
+                  stroke-width="2"
+                />
+                <path
+                  d="M15 80 V15"
+                  stroke="#3f8b68"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+
+            <h3>Quantitative finance</h3>
+
+            <p>
+              Stochastic modelling, computational finance, fixed income,
+              quantitative risk management and numerical methods.
+            </p>
+
+          </article>
+
+
+          <!-- FINANCE -->
+          <article class="skill-card">
+
+            <div class="skill-drawing">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <rect
+                  x="18"
+                  y="28"
+                  width="64"
+                  height="46"
+                  rx="4"
+                  fill="none"
+                  stroke="#10553d"
+                  stroke-width="5"
+                />
+                <path
+                  d="M30 45 H70
+                     M30 58 H55"
+                  stroke="#3f8b68"
+                  stroke-width="4"
+                />
+                <circle
+                  cx="67"
+                  cy="58"
+                  r="7"
+                  fill="#c7f36b"
+                />
+              </svg>
+            </div>
+
+            <h3>Finance</h3>
+
+            <p>
+              Financial markets, project finance, asset management,
+              fixed income and green finance.
+            </p>
+
+          </article>
+
+
+          <!-- ECONOMICS -->
+          <article class="skill-card">
+
+            <div class="skill-drawing">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <path
+                  d="M20 78 H82"
+                  stroke="#10553d"
+                  stroke-width="5"
+                />
+                <path
+                  d="M25 70 L25 42
+                     M42 70 L42 32
+                     M59 70 L59 52
+                     M76 70 L76 22"
+                  stroke="#3f8b68"
+                  stroke-width="9"
+                />
+                <circle
+                  cx="76"
+                  cy="22"
+                  r="7"
+                  fill="#c7f36b"
+                />
+              </svg>
+            </div>
+
+            <h3>Economics &amp; empirical analysis</h3>
+
+            <p>
+              Energy economics, econometrics, empirical modelling,
+              statistics and market analysis.
+            </p>
+
+          </article>
+
+
+          <!-- CLIMATE -->
+          <article class="skill-card">
+
+            <div class="skill-drawing">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <path
+                  d="M50 80
+                     C30 63, 22 45, 35 30
+                     C45 18, 61 23, 65 38
+                     C82 39, 85 59, 73 68
+                     C65 75, 58 77, 50 80 Z"
+                  fill="none"
+                  stroke="#10553d"
+                  stroke-width="5"
+                />
+                <path
+                  d="M50 77 V42
+                     M50 57 L35 47
+                     M50 62 L67 49"
+                  stroke="#3f8b68"
+                  stroke-width="4"
+                />
+                <circle
+                  cx="69"
+                  cy="30"
+                  r="9"
+                  fill="#c7f36b"
+                />
+              </svg>
+            </div>
+
+            <h3>Climate &amp; risk</h3>
+
+            <p>
+              Climate risk, transition risk, physical risk, climate
+              economics and risk assessment.
+            </p>
+
+          </article>
+
+
+          <!-- PROGRAMMING -->
+          <article class="skill-card">
+
+            <div class="skill-drawing">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <path
+                  d="M35 30 L15 50 L35 70"
+                  fill="none"
+                  stroke="#10553d"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M65 30 L85 50 L65 70"
+                  fill="none"
+                  stroke="#10553d"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M55 20 L45 80"
+                  stroke="#c7f36b"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+
+            <h3>Programming &amp; research</h3>
+
+            <p>
+              Python, Java, data analysis, computational modelling,
+              research methods and LaTeX.
+            </p>
+
+          </article>
+
+        </div>
 
       </div>
     </section>
 
 
-    <!-- RESEARCH FOCUS -->
-    <section class="about-section research-section">
+    <!-- RESEARCH -->
+    <section class="research-section">
 
-      <div class="section-heading">
-        <p class="eyebrow">RESEARCH FOCUS</p>
-        <h2>Questions around markets, finance and uncertainty.</h2>
+      <div class="about-shell">
+
+        <div class="research-grid">
+
+          <div>
+            <p class="about-kicker research-kicker">RESEARCH</p>
+
+            <h2>
+              Markets, finance and the
+              uncertainty behind them.
+            </h2>
+          </div>
+
+          <div class="research-copy">
+
+            <p>
+              My work focuses on questions where energy markets, financial
+              decisions and uncertainty meet.
+            </p>
+
+            <p>
+              I am particularly interested in electricity markets,
+              renewable generation, market design, climate risk,
+              financial risk and quantitative approaches to understanding
+              changing energy systems.
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="research-grid">
-
-        <article class="research-card">
-          <h3>Energy systems &amp; markets</h3>
-          <p>
-            Electricity and gas markets, market design, renewable generation,
-            flexibility and price formation.
-          </p>
-        </article>
-
-        <article class="research-card">
-          <h3>Finance &amp; risk</h3>
-          <p>
-            Financial markets, project finance, fixed income, quantitative
-            risk and climate-related financial risk.
-          </p>
-        </article>
-
-        <article class="research-card">
-          <h3>Quantitative &amp; empirical modelling</h3>
-          <p>
-            Stochastic methods, econometrics, empirical market modelling,
-            numerical methods and computational approaches to uncertainty.
-          </p>
-        </article>
-
-      </div>
     </section>
 
   </main>
 
 
   <style>
+
     .about-page {
+      width: 100%;
+      overflow: hidden;
       background: var(--paper);
       color: var(--ink);
     }
 
+    .about-shell {
+      width: min(1320px, calc(100% - 6rem));
+      margin: 0 auto;
+    }
+
+
+    /* HERO */
+
     .about-hero {
-      padding: 7rem 2rem 6rem;
-      text-align: center;
+      padding: 6.5rem 0 7rem;
     }
 
-    .about-hero-inner {
-      max-width: 980px;
-      margin: 0 auto;
+    .about-kicker {
+      margin: 0 0 1.4rem;
+      color: var(--green-800);
+      font-size: .72rem;
+      line-height: 1;
+      letter-spacing: .2em;
+      font-weight: 700;
     }
 
-    .about-hero .eyebrow {
-      margin-bottom: 2rem;
+    .about-hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
+      align-items: center;
+      gap: 6rem;
     }
 
-    .about-hero h1 {
-      max-width: 900px;
-      margin: 0 auto;
-      font-size: clamp(2.8rem, 6vw, 5.5rem);
-      line-height: 0.98;
-      letter-spacing: -0.055em;
+    .about-hero-copy h1 {
+      max-width: 850px;
+      margin: 0;
+      font-size: clamp(3.2rem, 5.4vw, 5.5rem);
+      line-height: 1.01;
+      letter-spacing: -.055em;
       font-weight: 600;
     }
 
-    .about-intro {
-      max-width: 720px;
-      margin: 2.2rem auto 0;
-      font-size: 1.2rem;
-      line-height: 1.7;
+    .about-hero-copy > p {
+      max-width: 700px;
+      margin: 2rem 0 0;
+      font-size: 1.08rem;
+      line-height: 1.75;
       color: var(--muted);
     }
 
-    .profile-photo {
-      width: 240px;
-      height: 240px;
-      margin: 3.5rem auto 0;
-      border-radius: 50%;
-      padding: 7px;
-      border: 2px solid var(--green-800);
-      background: var(--paper);
-      box-shadow: 0 18px 45px rgba(6, 37, 27, 0.12);
+    .about-photo-frame {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .profile-photo img {
-      width: 100%;
-      height: 100%;
-      display: block;
+    .about-photo-frame img {
+      width: min(360px, 100%);
+      aspect-ratio: 1;
       object-fit: cover;
       border-radius: 50%;
+      padding: 8px;
+      border: 2px solid var(--green-800);
+      background: var(--paper);
+      box-shadow: 0 24px 60px rgba(6,37,27,.12);
     }
+
+
+    /* SECTIONS */
 
     .about-section {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 6rem 2rem;
+      padding: 7rem 0;
+      border-top: 1px solid var(--line);
     }
 
-    .section-heading {
-      max-width: 760px;
+    .section-intro {
+      max-width: 800px;
       margin-bottom: 3rem;
     }
 
-    .section-heading .eyebrow {
-      margin-bottom: 1rem;
-    }
-
-    .section-heading h2 {
+    .section-intro h2 {
       margin: 0;
-      font-size: clamp(2rem, 3.5vw, 3.4rem);
+      font-size: clamp(2.2rem, 3.5vw, 3.5rem);
       line-height: 1.05;
-      letter-spacing: -0.04em;
+      letter-spacing: -.045em;
+      font-weight: 600;
     }
 
-    .academic-grid {
+
+    /* UNIVERSITIES */
+
+    .university-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 1.25rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.4rem;
     }
 
-    .academic-card {
-      display: flex;
-      flex-direction: column;
-      min-height: 390px;
-      padding: 2rem;
+    .university-card {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      min-height: 330px;
+      overflow: hidden;
       border: 1px solid var(--line);
       border-radius: 24px;
       background: var(--white);
       color: var(--ink);
       text-decoration: none;
-      transition:
-        transform 180ms ease,
-        border-color 180ms ease,
-        box-shadow 180ms ease;
+      transition: transform .2s ease, box-shadow .2s ease;
     }
 
-    .academic-card:hover {
-      transform: translateY(-5px);
-      border-color: var(--green-600);
-      box-shadow: 0 18px 45px rgba(6, 37, 27, 0.08);
+    .university-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 45px rgba(6,37,27,.1);
     }
 
-    .academic-card-featured {
+    .university-image {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .university-image svg {
+      width: 100%;
+      height: 100%;
+      min-height: 330px;
+      display: block;
+    }
+
+    .university-content {
+      padding: 2.2rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .university-content > span {
+      color: var(--green-800);
+      font-size: .7rem;
+      letter-spacing: .15em;
+      font-weight: 700;
+    }
+
+    .university-content h3 {
+      margin: 2.2rem 0 .9rem;
+      font-size: 1.45rem;
+      line-height: 1.15;
+      letter-spacing: -.03em;
+    }
+
+    .university-content strong {
+      color: var(--green-800);
+      font-size: .96rem;
+      line-height: 1.5;
+    }
+
+    .university-content small {
+      margin-top: .55rem;
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.5;
+    }
+
+    .university-content p {
+      margin: auto 0 0;
+      padding-top: 1.8rem;
+      color: var(--muted);
+      font-size: .9rem;
+      line-height: 1.65;
+    }
+
+    .university-featured {
       background: var(--green-900);
       color: var(--white);
       border-color: var(--green-900);
     }
 
-    .academic-card-featured:hover {
-      border-color: var(--green-900);
-    }
-
-    .card-location {
-      margin-bottom: 2.5rem;
-      font-size: 0.76rem;
-      line-height: 1.3;
-      letter-spacing: 0.16em;
-      font-weight: 600;
-      color: var(--green-800);
-    }
-
-    .academic-card-featured .card-location {
+    .university-featured .university-content > span {
       color: var(--lime);
     }
 
-    .academic-card h3 {
-      margin: 0 0 1rem;
-      font-size: 1.45rem;
-      line-height: 1.15;
-      letter-spacing: -0.025em;
-    }
-
-    .degree {
-      margin: 0;
-      color: var(--green-800);
-      font-size: 1rem;
-      line-height: 1.5;
-      font-weight: 600;
-    }
-
-    .academic-card-featured .degree {
+    .university-featured .university-content strong {
       color: var(--lime);
     }
 
-    .card-meta {
-      margin: 0.8rem 0 0;
-      font-size: 0.9rem;
-      line-height: 1.5;
-      color: var(--muted);
+    .university-featured .university-content small,
+    .university-featured .university-content p {
+      color: rgba(251,252,247,.75);
     }
 
-    .academic-card-featured .card-meta {
-      color: rgba(251, 252, 247, 0.72);
-    }
 
-    .card-description {
-      margin: auto 0 0;
-      padding-top: 2rem;
-      font-size: 0.98rem;
-      line-height: 1.7;
-      color: var(--muted);
-    }
-
-    .academic-card-featured .card-description {
-      color: rgba(251, 252, 247, 0.82);
-    }
+    /* SKILLS */
 
     .skills-section {
-      border-top: 1px solid var(--line);
+      background: var(--paper);
     }
 
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 1px;
-      background: var(--line);
       border: 1px solid var(--line);
+      background: var(--line);
     }
 
-    .skill-group {
-      min-height: 210px;
-      padding: 2rem;
+    .skill-card {
+      min-height: 300px;
+      padding: 2.2rem;
       background: var(--paper-2);
     }
 
-    .skill-group h3 {
-      margin: 0 0 1.1rem;
+    .skill-drawing {
+      width: 82px;
+      height: 82px;
+      margin-bottom: 1.8rem;
+    }
+
+    .skill-drawing svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .skill-card h3 {
+      margin: 0 0 .9rem;
       font-size: 1.25rem;
       line-height: 1.2;
-      letter-spacing: -0.025em;
+      letter-spacing: -.025em;
     }
 
-    .skill-group p {
+    .skill-card p {
       margin: 0;
-      font-size: 1rem;
-      line-height: 1.75;
+      max-width: 360px;
       color: var(--muted);
+      font-size: .93rem;
+      line-height: 1.7;
     }
+
+
+    /* RESEARCH */
 
     .research-section {
-      border-top: 1px solid var(--line);
-      padding-bottom: 8rem;
-    }
-
-    .research-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1.25rem;
-    }
-
-    .research-card {
-      padding: 2.2rem;
-      min-height: 260px;
-      border-radius: 24px;
+      padding: 8rem 0;
       background: var(--green-900);
       color: var(--white);
     }
 
-    .research-card h3 {
-      margin: 0 0 1.5rem;
-      font-size: 1.35rem;
-      line-height: 1.2;
-      letter-spacing: -0.025em;
+    .research-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 7rem;
+      align-items: start;
     }
 
-    .research-card p {
+    .research-kicker {
+      color: var(--lime);
+    }
+
+    .research-grid h2 {
+      max-width: 600px;
       margin: 0;
-      font-size: 1rem;
-      line-height: 1.75;
-      color: rgba(251, 252, 247, 0.8);
+      font-size: clamp(2.5rem, 4vw, 4.2rem);
+      line-height: 1.05;
+      letter-spacing: -.05em;
     }
 
-    @media (max-width: 1100px) {
-      .academic-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .research-copy {
+      max-width: 700px;
+      font-size: 1.08rem;
+      line-height: 1.8;
+      color: rgba(251,252,247,.8);
+    }
+
+    .research-copy p {
+      margin: 0 0 1.8rem;
+    }
+
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1050px) {
+
+      .about-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+      }
+
+      .about-photo-frame {
+        justify-content: flex-start;
+      }
+
+      .university-grid {
+        grid-template-columns: 1fr;
       }
 
       .skills-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .research-grid {
         grid-template-columns: 1fr;
+        gap: 3rem;
       }
     }
 
+
     @media (max-width: 700px) {
+
+      .about-shell {
+        width: calc(100% - 2.5rem);
+      }
+
       .about-hero {
-        padding: 5rem 1.25rem 4rem;
+        padding: 4.5rem 0 5rem;
+      }
+
+      .about-hero-copy h1 {
+        font-size: 2.8rem;
+      }
+
+      .about-photo-frame img {
+        width: 240px;
       }
 
       .about-section {
-        padding: 4rem 1.25rem;
+        padding: 5rem 0;
       }
 
-      .about-hero h1 {
-        font-size: 2.7rem;
+      .university-card {
+        grid-template-columns: 1fr;
       }
 
-      .about-intro {
-        font-size: 1.05rem;
+      .university-image svg {
+        min-height: 220px;
       }
 
-      .profile-photo {
-        width: 190px;
-        height: 190px;
-      }
-
-      .academic-grid,
       .skills-grid {
         grid-template-columns: 1fr;
       }
 
-      .academic-card {
-        min-height: 340px;
+      .research-section {
+        padding: 5rem 0;
       }
     }
+
   </style>
 
 </BaseLayout>
