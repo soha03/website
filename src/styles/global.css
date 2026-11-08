@@ -277,3 +277,38 @@
     gap: 30px;
   }
 }
+
+.hero,
+.hero * {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.hero {
+  color: var(--ink) !important;
+}
+
+.hero h1,
+.hero h2,
+.hero h3,
+.hero p,
+.hero span,
+.hero a,
+.hero em,
+.hero strong {
+  color: var(--ink) !important;
+}
+
+.hero .eyebrow,
+.hero .hero-kicker,
+.hero .hero-label {
+  color: var(--green-600) !important;
+}
+
+.hero a {
+  color: var(--green-900) !important;
+}
+
+.hero a:hover {
+  color: var(--green-600) !important;
+}
