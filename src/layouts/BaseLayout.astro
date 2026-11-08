@@ -1,4 +1,4 @@
-﻿---
+---
 import "../styles/global.css";
 const { title = "Soha Sami", description = "", active = "" } = Astro.props;
 ---
@@ -13,7 +13,7 @@ const { title = "Soha Sami", description = "", active = "" } = Astro.props;
 <body>
   <header class="site-header">
     <div class="shell nav">
-      <a class="brand" href="/website/">SOHA SAMI<span>.</span></a>
+      <a class="brand" href="/website/">SOHA SAMI</a>
       <nav class="nav-links" aria-label="Main navigation">
         <a href="/website/" class:list={{ active: active === "home" }}>Home</a>
         <a href="/website/research/" class:list={{ active: active === "research" }}>Research</a>
@@ -34,7 +34,7 @@ const { title = "Soha Sami", description = "", active = "" } = Astro.props;
       <div>
         <p class="eyebrow">CONTACT</p>
         <h2>Soha Sami</h2>
-        <p>Energy markets · Climate risk · Quantitative finance</p>
+        <p>Energy markets � Climate risk � Quantitative finance</p>
       </div>
       <div class="footer-links">
         <a href="mailto:soha.sami@dauphine.eu">Email</a>
@@ -46,3 +46,4 @@ const { title = "Soha Sami", description = "", active = "" } = Astro.props;
   </footer>
 </body>
 </html>
+
